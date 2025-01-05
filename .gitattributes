@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#include<LiquideCrystal.h>
+LiquideCrystal lcd (12,11,5,4,3,2);
+void setuo(){
+    lcd.begin(16,2);
+    lcd.clear();
+}
+void loop(){
+    lcd.print("Hello ")
+    lcd.setCursor(0,1);
+    lcd.print("are u okay?");
+}
